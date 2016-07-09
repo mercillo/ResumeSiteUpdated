@@ -3,19 +3,29 @@
 	<head>
 		
 		<title> Marlon Ercillo </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
-        <link src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/archivo-black" type="text/css">
-		<script src="jquery-1.12.4.min.js" ></script>
-  		<script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="javascript.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/archivo-black" type="text/css">
+    <link rel="stylesheet" href="reportcard/css/badges.css">
 
-        <script src="jquery.viewportchecker.js"></script>
+
+		<script src="jquery-1.12.4.min.js" ></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+  	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="jquery.viewportchecker.js"></script>
+    <script src="reportcard/js/reportcard.js"></script>  
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script> 
+         
+    <script src="javascript.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB37khcYZWOCRmNw9kAjOwRaw0sLP9qt6c&callback=initMap"
+    async defer></script>
+
 	</head>
 
 
@@ -101,7 +111,7 @@
         </a>
     </div>
 	</div><!--Carousel End-->
-
+<hr>
 	<div class="container bottomMargin"><!-- About me Start-->
         <div id="aboutContainer">
         <div class="row text-center page-header">
@@ -149,11 +159,11 @@
 	</div><!-- about container end-->  
 
 
-
+<hr>
     
   <!--Work Experience -->
   <div id="workContainer" class="bottomMargin gidole">
-    <div class="container text-center"><!--container start-->
+    <div class="container contentContainer text-center"><!--container start-->
 
         <div class="row">
         
@@ -167,7 +177,7 @@
           <div class="col-sm-12">
             <h3 class="text-primary">Secured Retail Networks</h3>
             <h4>Network Engineer</h4>
-            <h3 class="label label-default">June 2014 - Present </h3>
+            <h2 class="label label-default">June 2014 - Present </h2>
           </div>
           <div class="col-sm-12">
             <h3 class="text-primary">Student Center and Event Services</h3>
@@ -240,7 +250,11 @@
 
           </div>                                        
         </div>
-
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="report-card treehouse"></div>
+          </div>
+        </div>
       </div><!--first row end-->
       
 
@@ -311,29 +325,41 @@
     -->
     </div>
   </div>
+
 </div> <!--portfolioContainer end-->
 
 
   <footer>
     <div id="footerContainer">
-    <div class="container text-center" >
-      <h2 >Contact:</h2>
-
-      <div class="row center">
-        <h5 class="footer text-primary">Email: mercillo729@gmail.com</h5>
-        <div class="col-lg-4 col-lg-offset-4">
-          <a href="http://www.github.com/mercillo"><img class="socialMediaLogo center" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-128.png"></img>
-          </a>
-
-          <a href="http://www.linkedin.com/pub/marlon-ercillo/96/575/580/en"><img class="socialMediaLogo center" src="https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-128.png"></img>
-          </a>
-
-          <a href="http://www.soundcloud.com/marky-ercillo"><img class="socialMediaLogo center" src="https://cdn1.iconfinder.com/data/icons/social-icon-1-1/512/social_style_1_soundCloud-128.png"></img>
-          </a>
+    <div class="container m-b-3 m-p-5 text-center" >
 
 
-          <p class="h6">Copyright &copy; Mercillo 2016</p>
+
+        <div class="col-md-3 col-sm-6 col-md-offset-1">
+            <div class="googlemapContainers">
+            <div id="googleMap"></div>
+          </div>
         </div>
+
+      <div class="col-md-7 col-sm-6 text-center">
+              <h2 >Contact:</h2>
+          <h5 class="footer text-primary">Email: mercillo729@gmail.com</h5>
+          <div class="col-lg-4 col-lg-offset-4">
+            <a href="http://www.github.com/mercillo"><img class="socialMediaLogo center" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Github-01-128.png"></img>
+            </a>
+
+            <a href="http://www.linkedin.com/pub/marlon-ercillo/96/575/580/en"><img class="socialMediaLogo center" src="https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-128.png"></img>
+            </a>
+
+            <a href="http://www.soundcloud.com/marky-ercillo"><img class="socialMediaLogo center" src="https://cdn1.iconfinder.com/data/icons/social-icon-1-1/512/social_style_1_soundCloud-128.png"></img>
+            </a>
+
+
+            <p class="h6">Copyright &copy; Mercillo 2016</p>
+          </div>
+        </div>
+
+
       </div>
       </div>
   </footer>

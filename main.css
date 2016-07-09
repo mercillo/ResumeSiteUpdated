@@ -134,6 +134,8 @@ content:url("http://res.cloudinary.com/mercillo/image/upload/v1463212667/Screen_
   background-color:black;
   color:white;
 font-family: Open Sans; 
+height:400px;
+padding:50px;
 
 }
 
@@ -165,4 +167,17 @@ font-family: Open Sans;
 
 .fadeInLeft{
   transition-duration:2s;
+}
+
+
+#googleMap{
+ height:250px;
+ width:400px; 
+}
+
+
+@media only screen and (max-width: 780px) { 
+  #googleMap { 
+    display: none; 
+  } 
 }
